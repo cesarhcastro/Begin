@@ -1,4 +1,3 @@
-Attribute VB_Name = "RevertirProvisionMes"
 ' =============================================================================
 ' Módulo : RevertirProvisionMes
 ' Propósito: Revierte (extorna en bloque) todas las provisiones del mes actual
@@ -12,19 +11,20 @@ Attribute VB_Name = "RevertirProvisionMes"
 '
 ' Instrucciones de uso:
 '   1. Abrir el Editor VBA (Alt+F11).
-'   2. Menú Archivo > Importar Archivo y seleccionar este .bas.
+'   2. Insertar módulo nuevo y pegar este código (o usar Archivo > Importar).
 '   3. Asegurarse de que en la hoja Control estén correctamente cargados:
 '      - Celda B2  : Fecha del mes a revertir.
 '      - Celda B6  : N° de Informe de la provisión ejecutada.
 '      - Celda B7  : N° de Expediente (CUE) de la provisión ejecutada.
-'   4. Ejecutar la macro RevertirProvisionMes (Ctrl+Mayús+V).
+'   4. Asignar acceso directo Ctrl+Mayús+R desde:
+'      Herramientas > Macros > Opciones > Tecla de método abreviado.
 ' =============================================================================
 
 Sub RevertirProvisionMes()
-Attribute RevertirProvisionMes.VB_Description = "Revierte todas las provisiones del mes actual en PlanPagos (limpia Orden, CUE, Informe y Monto)."
-Attribute RevertirProvisionMes.VB_ProcData.VB_Invoke_Func = "R\n14"
 '
-' Acceso directo sugerido: Ctrl+Mayús+R
+' Revierte todas las provisiones del mes actual en PlanPagos
+' (limpia columnas AA, AB, AC, AD: Orden, CUE, Informe y Monto sin IGV).
+' Acceso directo: Ctrl+Mayús+R  (asignar manualmente en Herramientas > Macros)
 '
 
     ' ── Hojas ────────────────────────────────────────────────────────────────
