@@ -22,9 +22,9 @@ Attribute VB_Name = "RevertirProvisionMes"
 
 Sub RevertirProvisionMes()
 Attribute RevertirProvisionMes.VB_Description = "Revierte todas las provisiones del mes actual en PlanPagos (limpia Orden, CUE, Informe y Monto)."
-Attribute RevertirProvisionMes.VB_ProcData.VB_Invoke_Func = "V\n14"
+Attribute RevertirProvisionMes.VB_ProcData.VB_Invoke_Func = "R\n14"
 '
-' Acceso directo sugerido: Ctrl+Mayús+V
+' Acceso directo sugerido: Ctrl+Mayús+R
 '
 
     ' ── Hojas ────────────────────────────────────────────────────────────────
